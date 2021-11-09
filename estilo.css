@@ -1,0 +1,85 @@
+img {width:3cm;height:3cm;}
+table {width:80%;margin:auto;}
+th#price {cursor:pointer;}
+li {color:blue;}
+
+/*css de mis datos personales*/
+.data{
+    background-color: rgb(245, 245, 245) ;
+    width: 425px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: rgb(22, 22, 22) 3px 3px 5px;
+}
+
+.data li {
+    color:rgb(41, 116, 31);
+    list-style: disc;
+}
+
+.agregar{
+    margin: 30px;
+    padding: 15px;
+    background-color: rgb(131, 163, 163);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 1 1 10%;
+    box-shadow: black 5px 5px 5px;
+    border-radius: 30px;
+    width: 50%;
+}
+
+#imagen{
+    width: 70%;
+}
+
+#descripcion{
+    width: 70%;
+}
+
+#titulo, #precio, #categoria{
+    width: 30%;
+}
+
+
+.succes{
+    margin-top: 15px;
+    width: 30%;
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(148, 226, 129) 3px 3px 3px;
+}
+
+.succes:hover{
+    width: 30%;
+    background-color: rgb(84, 196, 99);
+    color: rgb(0, 0, 0);
+    box-shadow: rgb(27, 27, 27) 3px 3px 3px;
+}
+
+.succes:focus{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(84, 196, 99);
+    border: 3px solid rgb(84, 196, 99);
+    box-shadow: none;
+}
+
+
+.eliminar{
+    background-color: rgb(153, 65, 65);
+    color: rgb(255, 255, 255);
+}
+
+/*si chequea muestra los productos sin cheque desaparecen los productos*/
+input#c1:checked ~ table tbody tr.c1 { display: table-row; }
+input#c1:not(checked) ~ table tbody tr.c1 { display: none; }
+input#c2:checked ~ table tbody tr.c2 { display: table-row; }
+input#c2:not(checked) ~ table tbody tr.c2 { display: none; }
+input#c3:checked ~ table tbody tr.c3 { display: table-row; }
+input#c3:not(checked) ~ table tbody tr.c3 { display: none; }
+input#c4:checked ~ table tbody tr.c4 { display: table-row; }
+input#c4:not(checked) ~ table tbody tr.c4 { display: none; }
